@@ -1,0 +1,180 @@
+.selectModel{
+    overflow-y: auto;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(25, 42, 50, 0.7);
+    opacity: 1;
+    transition: all 0.4s ease 0s;
+    display: flex;
+    z-index: 10;
+    box-sizing: border-box;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.selectModel__container{
+    background-color: rgb(255, 255, 255);
+    min-width: 444px;
+    text-align: center;
+    padding: 40px;
+    color: rgb(25, 42, 50);
+    position: relative;
+    margin: auto;
+    border-radius: 4px;
+   
+}
+.selectModel__textalign{
+    text-align: left;
+}
+.selectModel__header{
+    font-size: 24px;
+    padding-bottom: 24px;
+}
+.selectModel__subTitle{
+    font-size: 14px;
+    font-weight: bold;
+}
+.selectModel__inputSection{
+    display: flex;
+    margin: 8px 0px 24px;
+
+}
+.selectModel__input{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 8px 0px 0px;
+    width: 328px;
+}
+.wishModel__content{
+    letter-spacing: 0.3px;
+    color: rgb(25, 42, 50);
+    text-align: left;
+    overflow-y: auto;
+    margin-top: 21px;
+    font-size: 18px;
+    font-weight: 700;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+.wishModel__inputText{
+    font-size: 14px;
+    font-weight: 400;
+    flex: 1 1 0%;
+    margin-bottom: 2px;
+    color: rgb(25, 42, 50);
+}
+.wishModel__inputSection{
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    
+   
+}
+.wishModel__btn{
+    color: rgb(255, 255, 255);
+    background-color: rgb(47, 183, 236);
+    font-size: 16px;
+    font-weight: 700;
+    height: 40px;
+    position: relative;
+    border-radius: 4px;
+    padding: 0px 16px;
+    cursor: pointer;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background-color 0.2s ease 0s;
+
+}
+.wishModel__cancelBtn{
+    position: absolute;
+    top: 34px;
+    right: 34px;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+
+}
+.selectWishModel__image{
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    border-radius: 50%;
+}
+.wishModel__text{
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    flex: 1 1 0%;
+    text-align: left;
+    color: rgb(25, 42, 50);
+    margin: 10px;
+     
+}
+.wishModel__wrapper{
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.wishModel__roomGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.selectModel__createbtn{
+    color: rgb(255, 255, 255);
+    background-color: rgb(47, 183, 236);
+    font-size: 16px;
+    font-weight: 700;
+    height: 40px;
+    position: relative;
+    border-radius: 4px;
+    padding: 0px 16px;
+    cursor: pointer;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background-color 0.2s ease 0s;
+}
+.selectModel__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+.selectModel__wishListTitle{
+    font-size: 14px;
+    font-weight: bold;
+    border-top: 2px solid rgb(240, 245, 247);
+    padding: 24px 16px;
+}
+.wishModel__ScrollContainer{
+    max-height: 346px;
+    overflow-y: auto;
+
+}
+.wishModel__RoomWrapper{
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+    flex-direction: column;
+
+}
+.wishModel__RoomBtn{
+    height: 346px;
+}

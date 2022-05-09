@@ -1,0 +1,23 @@
+.signin{
+   width: 250px;
+
+  
+    
+    
+}
+.signin__wrapper{
+   display: flex;
+   flex-direction: column;
+   -webkit-box-align: center;
+   align-items: center;
+   width: 100%;
+  
+    
+}
+.signin__text{
+   text-align: center;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 1.5;
+   margin-bottom: 12px;
+}

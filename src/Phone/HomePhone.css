@@ -1,0 +1,19 @@
+.homephone{
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgb(240, 245, 247);
+}
+.homephone__wrapper{
+    width: 100%;
+    text-align: center;
+    position: relative;
+
+}
+.homephone__products{
+    flex: 1 1 auto;
+    background-color: rgb(248, 250, 251);
+   
+
+}

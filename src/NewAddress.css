@@ -1,0 +1,118 @@
+.newaddress{
+    height: 581.172px;
+
+    overflow: hidden;
+}
+.newaddress__Wrapper{
+  
+}
+.newaddress__WrapperForm{
+    max-width: 800px;
+    margin: 0px 24px;
+}
+.newaddress__WrapperFormText{
+    color: rgb(25, 42, 50);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px 0px;
+    text-align: left;
+}
+.newaddress__WrapperFormElement{
+    margin: 0px -8px;
+}
+.newaddress__WrapperFormElementRow{
+  
+}
+.newaddress__WrapperFormElementRowEntry{
+    
+
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    width: 600px;
+}
+.newaddress__WrapperFormTextInputWrapper{
+    flex: 1 1 0%;
+    box-sizing: border-box;
+    margin: 8px;
+    position: static;
+}
+
+
+.newaddress__WrapperFormTextInputText{
+    color: rgb(25, 42, 50);
+    font-size: 12px;
+    font-weight: 400;
+    padding: 4px 0px;
+    text-align: left;
+}
+.newaddress__WrapperFormInputWrapper{
+    width: 100%;
+    display: flex;
+}
+.newaddress__WrapperFormInput{
+    flex: 1 1 0%;
+    border: 1px solid rgb(212, 227, 235);
+    border-radius: 2px;
+    font-weight: 400;
+    font-size: 14px;
+    height: 12px;
+    padding: 10px;
+    text-align: left;
+    color: rgb(25, 42, 50);
+    background-color: rgb(248, 250, 251);
+    cursor: auto;
+    width: 100% !important;
+}
+.newaddress__WrapperBtn{
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    padding: 32px 0px;
+}
+.newaddress__Wrapper{
+    margin: 0px 16px 0px 0px;
+}
+.newaddress__Btn1{
+    font-size: 16px;
+    font-weight: 700;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid rgb(47, 183, 236);
+    color: rgb(47, 183, 236);
+    position: relative;
+    border-radius: 4px;
+    padding: 0px 16px;
+    cursor: pointer;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background-color 0.2s ease 0s;
+    font-weight: bold !important;
+
+
+
+
+}
+.newaddress__Btn2{
+    color: rgb(255, 255, 255);
+    background-color: rgb(47, 183, 236);
+    font-size: 16px;
+    font-weight: 700;
+    height: 40px;
+    position: relative;
+    border-radius: 4px;
+    padding: 0px 16px;
+    cursor: pointer;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background-color 0.2s ease 0s;
+    font-weight: bold !important;
+}

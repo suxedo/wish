@@ -1,0 +1,71 @@
+.roomType{
+
+}
+.roomType__Tab{
+    display: flex;
+    cursor: pointer;
+    flex: 1;
+}
+.roomType__TabWrapper{
+    height: 76px;
+    width: 346px;
+    line-height: 60px;
+    padding: 8px 16px;
+    position: relative;
+    display: flex;
+
+}
+.roomType__TabImage{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    background-color: rgb(240, 245, 247);
+}
+.roomType__TabText{
+    font-size: 16px;
+    display: inline-block;
+    padding-left: 16px;
+    -webkit-box-flex: 2;
+    flex-grow: 2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.roomType__TabIcon{
+    position: relative;
+    vertical-align: top;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 0;
+    height: 24px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.roomType__TabWrapperRadio{
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgb(212, 227, 235);
+    border-radius: 50%;
+    margin: 0px 16px 0px 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.roomType__TabWrapperRadioOpen{
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgb(47, 183, 236);
+    background-color:rgb(47, 183, 236) ;
+    border-radius: 50%;
+    margin: 0px 16px 0px 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-shrink: 0;
+}

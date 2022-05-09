@@ -1,0 +1,423 @@
+.main{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+ 
+    max-height: 0px;
+}
+.modal{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(25, 42, 50, 0.7);
+    overflow-y: scroll;
+    opacity: 1;
+    transition: all 150ms ease 0s;
+    z-index: 2;
+}
+
+.modal__mainContent{
+    margin: 24px auto;
+    
+    background-color: rgb(255, 255, 255);
+    padding: 12px 24px 24px;
+    border-radius: 3px;
+    width: 1080px;
+    position: relative;
+    transition: opacity 300ms ease 0s;
+    opacity: 1;
+    z-index: 3;
+   
+
+}
+.modal__Wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.modal__TabHeader{
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+}
+.modal__TabHeaderWrapper{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+.modal__TabHeaderContent{
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    margin: auto;
+}
+
+.modal__Tab1Wrapper{
+    position: relative;
+}
+.modal__Tab1{
+    height: 24px;
+    line-height: 24px;
+    display: flex;
+    flex: 0 1 auto;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px 40px 0px 0px;
+    cursor: pointer;
+    vertical-align: middle;
+    position: relative;
+}
+.modal__Tab11{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 2px solid rgb(47, 183, 236);
+    height: calc(100% + 4px);
+    padding: 0px 4px;
+}
+.modal__Tab11Text{
+    height: 24px;
+    line-height: 24px;
+    display: flex;
+    flex: 0 1 auto;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    vertical-align: middle;
+    position: relative;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(25, 42, 50);
+    letter-spacing: 0.3px;
+}
+.modal__TabCancelBtn{
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    cursor: pointer;
+    z-index: 4;
+}
+.modal__ProductContainer{
+    display: flex;
+}
+.modal__ProductContainerLeft{
+    width: 60%;
+    display: flex;
+    -webkit-box-align: center;
+   
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.modal__ProductContainerRight{
+    width: 40%;
+    padding-left: 64px;
+    position: relative;
+}
+.modal__ProductImageContainer{
+    padding-bottom: 40px;
+    display: flex;
+}
+.cc{
+    position: relative;
+    display: flex;
+    width: 568px;
+    height: 568px;
+}
+.modal__ProductContainerRightWrapper{
+    border: 1px solid rgb(240, 245, 247);
+    padding: 32px;
+    top: 0px;
+    width: 368px;
+}
+.modal__ProductContainerRightUpper{
+    border-bottom: 1px solid rgb(240, 245, 247);
+    padding-bottom: 4px;
+
+}
+.modal__ProductContainerRightLower{
+    box-sizing: border-box;
+
+}
+.modal__ProductContainerRightUpperText{
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(25, 42, 50);
+    overflow-wrap: break-word;
+}
+.modal__ProductContainerRightUpperRating{
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: rgb(25, 42, 50);
+    cursor: pointer;
+}
+.modal__ProductContainerRightUpperRate{
+    display: inline-flex;
+}
+.modal__ProductContainerRightUpperRateAmount{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-left: 8px;
+    color: rgb(0, 152, 211);
+
+}     
+.modal__ProductContainerRightUpperPrice{
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0px;
+    
+    flex-wrap: wrap;
+
+}  
+.modal__DimensionSelection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}      
+.modal__DimensionSelectionWrapper{
+    position: relative;
+    color: rgb(25, 42, 50);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}     
+.modal__DimesionSelectionType{
+    margin: 8px 0px;
+    font-size: 16px;
+    font-weight: 700;
+}  
+.modal__DimesionSelectionDropdown{
+    margin: 0px;
+    box-sizing: border-box;
+    color: rgb(25, 42, 50);
+    border-radius: 2px;
+    border: 1px solid rgb(212, 227, 235);
+    background-color: rgb(248, 250, 251);
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+} 
+.modal__DimesionSelectionDropdownWrapper{
+    padding: 0px 0px 0px 16px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    min-height: 42px;
+    width: calc(100% - 32px);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}    
+.modal__DimesionSelectionDropdownArrow{
+    display: flex;
+    margin: 0px 12px;
+    width: 8px;
+    transform: rotateZ(
+0deg);
+    transition: all 0.3s ease 0s;
+} 
+.modal__DimesionSelectionDropdownArrowOpen{
+    display: flex;
+    margin: 0px 12px;
+    width: 8px;
+    transform: rotateZ(
+-180deg);
+    transition: all 0.3s ease 0s;
+}
+
+.modal__DimensionSelectionDropdownOptionWrapper{
+    position: relative;
+    width: 100%;
+    padding: 12px 0px;
+}   
+.modal__DimensionSelectionDropdownOption{
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+}
+.modal__DimensionSelectionDropdownOptionText{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 90%;
+}
+.modal__DimensionSelectionDropdownOptionIcon{
+    height: 20px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.modal__DimesionSelectBoxDropdown{
+    box-sizing: border-box;
+    position: absolute;
+    height: 0px;
+    overflow-y: scroll;
+    top: 43px;
+    left: 0px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 0px;
+    border-color: rgb(212, 227, 235);
+    transition: height 0.3s ease 0s;
+    animation: 0.3s ease 0s 1 normal both running JZdqL;
+    z-index: 2;
+    width: 100%;
+}
+.modal__DimesionSelectBoxDropdownOpen{
+    box-sizing: border-box;
+    position: absolute;
+    height: 252px;
+    overflow-y: scroll;
+    top: 43px;
+    left: 0px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 0px;
+    border-color: rgb(212, 227, 235);
+    transition: height 0.3s ease 0s;
+    animation: 0.3s ease 0s 1 normal both running iNYMim;
+    z-index: 2;
+    width: 100%;
+}
+.model__DimesionSelectDropDownList{
+    font-size: 16px;
+    font-weight: 400;
+    min-height: 42px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    padding: 0px 16px;
+    justify-content: left;
+    flex-shrink: 0;
+}
+.a{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 32px;
+}
+.b{
+    position: relative;
+    width: 100%;
+    padding: 12px 0px;
+}
+.ba{
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+}
+.baAct{
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+
+}
+.bac{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 90%;
+}
+.modal__DimesionSelectBoxDropdownOpen::-webkit-scrollbar{
+    display: none;
+}
+.modal__DimesionSelectBoxDropdown::-webkit-scrollbar{
+    display: none;
+}
+.modal__PoductBuyBtn{
+    height: 48px;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-width: 140px;
+    cursor: pointer;
+    background-color: rgb(255, 86, 34);
+}
+.model__ProuctWishList{
+    text-align: center;
+    position: relative;
+    font-size: 16px;
+    margin-top: 14px;
+    height: 48px;
+    font-weight: 500;
+    color: rgb(126, 154, 166);
+    cursor: pointer;
+    display: flex;
+    
+}
+.model__ProductWishBtn{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex: 1 1 0%;
+}
+.ProductReview__container{
+    width: 100%;
+    border-top: 3px solid rgb(240, 245, 247);
+    padding: 32px 17px;
+    color: rgb(25, 42, 50);
+}
+.ProductReview__header{
+    margin-bottom: 18px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.ProductReview__title{
+    font-size: 18px;
+    font-weight: 700;
+}
+.ProductReview__btn{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(47, 183, 236);
+    cursor: pointer;
+}

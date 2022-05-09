@@ -1,0 +1,17 @@
+.signup__row{
+    display: flex;
+    width: 100%;
+}
+.signup{
+    width: 250px;
+}
+
+.signup__wrapper{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    
+     
+ }

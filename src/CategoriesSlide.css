@@ -1,0 +1,22 @@
+.categoriesslide{
+    background-color: white;
+    padding-bottom: 150px;
+}
+.categoriesslide__menu{
+    display: flex;
+    padding: 12px;
+    cursor: pointer;
+
+}
+.categoriesslide__menuImage{
+    width: 68px;
+    height: 46px;
+    border-radius: 2px;
+    margin: auto 2px;
+}
+.categoriesslide__menuText{
+    width: 80%;
+    color: rgb(72, 99, 111);
+    text-align: center;
+    padding: 10px 2px;
+}

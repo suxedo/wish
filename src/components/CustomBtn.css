@@ -1,0 +1,38 @@
+.containerbtn{
+    color: rgb(255, 255, 255);
+    background-color: rgb(47, 183, 236);
+    font-size: 16px;
+    font-weight: 700;
+    height: 48px;
+    position: relative;
+    border-radius: 4px;
+   
+    cursor: pointer;
+    width: 100%;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background-color 0.2s ease 0s;
+    margin-top: 15px;
+}
+.containerbtn_PRIMARY{
+    background-color: '#3B71F3' ;
+}
+.containerbtn_SECONDARY{
+    background-color: '#3B71F3' ;
+    border-width: 2px;
+}
+.text{
+    font-weight: bold;
+    color: white;
+    
+}
+.text__SECONDARY{
+    color: '#3B71F3';
+}
+.text__TERTIARY{
+    color: 'gray';
+}

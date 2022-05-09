@@ -1,0 +1,17 @@
+.homePage{
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgb(240, 245, 247);
+    margin-top: 100px;
+}
+.homePage__gridWrapper{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns:1fr 1fr 1fr;
+
+}

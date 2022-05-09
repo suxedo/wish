@@ -1,0 +1,103 @@
+type User @model @auth(rules: [{ allow: public }]) {
+    userSub:String!
+    id:ID!
+    firstname:String!
+    lastname: String!
+    username: String!
+    email: String!
+    profile: String
+  
+ 
+ }
+ type Category @model @auth(rules: [{ allow: public }]) {
+   id: ID!
+   name: String!
+   url: String!
+ 
+ 
+ }
+ type Product @model @auth(rules: [{ allow: public }]) {
+   id: ID!
+   name: String!
+   description: String
+   url: String!
+   images: [String!]!
+   size:  [String!]
+   color:  [String!]
+   categories:  [String!]
+   avgRating: Float
+   ratings: Int
+   price: Float!
+   shipping: Float
+   oldPrice: Float
+ }
+ 
+ type CartProduct @model @auth(rules:[{allow :public }]){
+   id:ID!
+   userSub:String!
+   quantity:Int!
+   productId:ID!
+   option: String
+   product: Product @hasOne(fields:["productId"])
+ }
+ type Order @model @auth(rules:[{allow :public }]){
+    id:ID!
+    userSub:String!
+    firstname:String!
+    lastname:String!
+    addressline1:String!
+    addressline2:String
+    country:String!
+    state:String
+    city:String
+    zip:String
+    phonenumber:String
+    check: Boolean
+    product:[Product] @hasMany(fields:["id"])
+    
+ }
+ type OrderProduct @model @auth(rules:[{allow :public }]){
+     id:ID!
+     quantity:Int!
+     productId:ID!
+     product:[Product] @hasMany(fields:["productId"])
+     orderId:ID!
+     order:[Order] @hasMany(fields:["orderId"])
+ 
+ }
+ type UserFollowing @model @auth(rules: [{ allow: public }]) {
+    id:ID!
+    userSub:String!
+    userId:ID!
+   
+  
+ 
+ }
+
+  type Comment @model @auth(rules: [{ allow: public }]) {
+    id:ID!
+    creatorId:String!
+    productId:ID!
+    text:String!
+  
+ }
+ type WishRooms @model @auth(rules: [{ allow: public }]) {
+    id:ID!
+    userSub:String!
+    name:String!
+  
+ }
+  type WishProducts @model @auth(rules: [{ allow: public }]) {
+    id:ID!
+    roomId:String!
+    productId:ID!
+    userSub:String!
+   
+
+  
+ }
+
+ 
+ 
+ 
+ 

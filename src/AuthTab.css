@@ -1,0 +1,69 @@
+.authTab{
+    overflow-y: auto;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(25, 42, 50, 0.7);
+    transition: all 0.4s ease 0s;
+    box-sizing: border-box;
+    line-height: 1;
+    opacity: 1;
+    color: rgb(25, 42, 50);
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.authWrapper{
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    border-radius: 4px;
+    width: 640px;
+}
+.authWrapper__Logo{
+    position: relative;
+    width: 100%;
+}
+.auth__panelWrapper{
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.auth__formsWrapper{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 16px;
+}
+.auth__formPane{
+    width: 250px;
+}
+.basemodel{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 11;
+    max-height: 0px;
+}
+.auth__imagefeeder{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(240, 245, 247);
+}

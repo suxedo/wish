@@ -1,0 +1,115 @@
+.sidebar__category{
+    width: 150px;
+    height: 100%;
+    background-color: yellow;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    z-index: 4;
+    outline: none;
+    overflow-x:hidden ;
+    background-color: white;
+    border-right: 1px solid rgb(240, 245, 247);
+    border-left: 1px solid rgb(240, 245, 247);
+    padding-top: 52px;
+}
+.sidebar__categoryHeading{
+    font-size: 14px;
+    font-weight: 700;
+    padding: 18px 14px 14px;
+    color: rgb(25, 42, 50);
+
+}
+.sidebar__categoryTab{
+    padding: 8px 0px;
+    display: flex;
+    flex-direction: row;
+    margin: 4px 6px;
+    color: rgb(159, 172, 188);
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: #fff;
+  
+}
+.sidebar__categoryTabActive{
+   
+    background-color: #f5f5f5;
+    padding: 8px 0px;
+    display: flex;
+    flex-direction: row;
+    margin: 4px 6px;
+    color: rgb(159, 172, 188);
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+  
+
+}
+.sidebar__categoryTab:hover{
+    background-color: #f5f5f5;
+}
+.sidebar__categoryTabhover{
+    padding: 8px 0px;
+    display: flex;
+    flex-direction: row;
+    margin: 4px 6px;
+    color: rgb(159, 172, 188);
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+
+}
+
+.sidebar__categoryTabText{
+    width: 70%;
+    font-size: 14px;
+    margin: auto 2px;
+    color: rgb(25, 42, 50);
+    overflow-wrap: break-word;
+
+}
+.sidebar__categoryTabIcon{
+    width: 18px;
+    height: 18px;
+    margin: auto 4px;
+    
+}
+.sidebar__categoryTabhover{
+    transform: translateX(0%);
+    opacity: 1;
+    width: 250px;
+    height: 100%;
+    overflow-y: scroll;
+    transition: all 0.5s ease-in-out 0s;
+    z-index: 3;
+    border-right: 1px solid rgb(212, 227, 235);
+    top: 0px;
+    left: 145px;
+    position: fixed;
+    background-color: white;
+    padding-top: 52px;
+
+}
+.sidebar__categoryTabhover::-webkit-scrollbar{
+    display: none;
+}
+.sidebar__categoryslide{
+    width: 250px;
+    height: 100%;
+    overflow-y: scroll;
+    transition: all 0.5s ease-in-out 0s;
+    transform: translateX(-100%);
+    opacity: 0;
+    z-index: 3;
+    border-right: 1px solid rgb(212, 227, 235);
+    top: 0px;
+    left: 152px;
+    position: fixed;
+    background-color: white;
+    padding-top: 52px;
+}
+.sidebar__categoryslide::-webkit-scrollbar {
+    display: none;
+  }

@@ -1,0 +1,194 @@
+
+.cart__CartListHeading{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(240, 245, 247);
+    color: rgb(25, 42, 50);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px 24px;
+    border: 1px solid rgb(212, 227, 235);
+}
+.cart__CartItemCard{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    min-width: 0px;
+    background-color: rgb(248, 250, 251);
+}
+.cart__CartItemCardWrapper{
+    min-width: 0px;
+    padding: 16px;
+    background-color: rgb(255, 255, 255);
+}
+.cart__CartItemCardContainer{
+    display: flex;
+    min-width: 0px;
+}
+
+
+
+.cart__CartItemCardImage{
+    width: 60px;
+    height: 60px;
+    background-size: 60px;
+    position: relative;
+    overflow: hidden;
+    flex: 0 0 auto;
+}
+
+.cart__ItemCartInfoandPriceWrapper{
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    min-width: 0px;
+}
+.cart__ItemCartInfo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    min-width: 0px;
+}
+.cart__ItemCartInfoName{
+    color: rgb(25, 42, 50);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 8px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.cart_ItemCartVariation{
+    line-height: 20px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.cart__ItemCartVariationText{
+    color: rgb(126, 154, 166);
+    font-size: 14px;
+    font-weight: 400;
+}
+.cart__ItemCartShipping{
+    line-height: 20px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(72, 99, 111);
+}
+.cart__ItemCartQuantity{
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.cart_ItemCartQuantitySelectBox{
+    margin: 0px 16px 0px 0px;
+    box-sizing: border-box;
+    width: 64px;
+    color: rgb(25, 42, 50);
+    border-radius: 2px;
+    border: 1px solid rgb(212, 227, 235);
+    background-color: rgb(248, 250, 251);
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.cart__ItemCartQuantityText{
+    color: rgb(0, 152, 211);
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.cart_ItemCartQuantitySelectBoxText{
+    padding: 0px 0px 0px 16px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    min-height: 42px;
+    width: calc(100% - 32px);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.cart_ItemCartQuantitySelectBoxIcon{
+    display: flex;
+    margin: 0px 12px;
+    width: 8px;
+    transform: rotateZ(0deg);
+    transition: all 0.3s ease 0s;
+}
+.cart_ItemCartQuantitySelectBoxIconOpen{
+    display: flex;
+    margin: 0px 12px;
+    width: 8px;
+    transform: rotateZ(-180deg);
+    transition: all 0.3s ease 0s;
+}
+
+.cart__ItemCartPriceInfo{
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 48px;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+}
+.cart__ItemCartPriceInfoText{
+    color: rgb(25, 42, 50);
+    margin-left: 4px;
+}
+.cart__ItemCartQuantityDropdown{
+    box-sizing: border-box;
+    position: absolute;
+    height: 0px;
+    overflow-y: scroll;
+    bottom: 42px;
+    left: 0px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 0px;
+    border-color: rgb(212, 227, 235);
+    transition: height 0.3s ease 0s;
+    animation: 0.3s ease 0s 1 normal both running JZdqL;
+    z-index: 2;
+    width: 100%;
+}
+.cart__ItemCartQuantityDropdownOpen{
+    box-sizing: border-box;
+    position: absolute;
+    height: 252px;
+    overflow-y: scroll;
+    bottom: 42px;
+    left: 0px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 0px;
+    border-color: rgb(212, 227, 235);
+    transition: height 0.3s ease 0s;
+    animation: 0.3s ease 0s 1 normal both running iNYMim;
+    z-index: 2;
+    width: 100%;
+}
+.cart__ItemCartQuantityList{
+    font-size: 16px;
+    font-weight: 400;
+    min-height: 42px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-shrink: 0;
+}

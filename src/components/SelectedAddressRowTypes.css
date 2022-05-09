@@ -1,0 +1,37 @@
+.selectaddress{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+   
+    align-items: center;
+    cursor: pointer;
+
+}
+
+
+.selectaddress__NotSelected{
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgb(212, 227, 235);
+    border-radius: 50%;
+    margin: 0px 16px 0px 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.selectaddress__IsSelected{
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgb(47, 183, 236);
+    border-radius: 50%;
+    margin: 0px 16px 0px 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
