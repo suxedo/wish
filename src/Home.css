@@ -1,9 +1,5 @@
 .home{
-    display: flex;
-    min-height: 0px;
-    outline: none;
-    flex: 1 1 auto;
-  
+    
     
     
 }
@@ -74,6 +70,7 @@
     background-color: rgb(248, 250, 251);
     padding-right: 250px;
     padding-left: 160px;
+
   }
   .homeroute__phone{
     box-sizing: border-box;
@@ -136,4 +133,46 @@
     height: 12px;
     display: inline-block;
     vertical-align: top;
+  }
+  .mobile__home{
+    visibility: hidden;
+  }
+  .home{
+    visibility: visible;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .home__refreral{
+      display: none;
+    }
+    .mobile__home{
+      visibility: visible;
+    }
+    .home__cart{
+      display: none;
+    }
+    .home{
+      display: none;
+
+    }
+    .homeroute{
+      box-sizing: border-box;
+    
+      display: flex;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      flex-direction: column;
+      align-items: center;
+      -webkit-box-pack: space-around;
+      -webkit-justify-content: space-around;
+      -ms-flex-pack: space-around;
+      justify-content: space-around;
+    
+      width: fit-content;
+  
+    }
+    
+   
+
   }

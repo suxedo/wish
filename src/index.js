@@ -10,6 +10,7 @@ import Reducers from './redux/reducers';
 import awsExports from "./aws-exports";
 import Amplify from "aws-amplify";
 import { BrowserRouter as Router } from "react-router-dom";
+import AppMobile from './AppMobile';
 
 const store = createStore(Reducers, applyMiddleware(thunk))
 Amplify.configure(awsExports);
@@ -19,7 +20,15 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
     <Provider store={store}>
-    <App />
+    
+      <App />
+        
+      
+
+ 
+        
+ 
+   
 
     </Provider>
 

@@ -77,13 +77,13 @@ function ProductsPage(props) {
     if (productList.length > 0) {
       return productList.map((item) => {
         return (
-          <Link to={`/feed/product/` + item.id} className="product__cardPhone">
-            <img className="product__card-imagePhone" src={item.url} alt="wear" />
-            <div className="product__card-detailPhone">
+          <Link to={`/feed/product/` + item.id} className="product__card">
+            <img className="product__card-image" src={item.url} alt="wear" />
+            <div className="product__card-detail">
               <CurrencyFormat
                 renderText={(value) => (
                   <>
-                    <h3 className="product__card-detailpricePhone"> {value}</h3>
+                    <h3 className="product__card-detailprice"> {value}</h3>
                   </>
                 )}
                 decimalScale={2}
@@ -92,10 +92,10 @@ function ProductsPage(props) {
                 thousandSeparator={true}
                 prefix={"₦"}
               />
-              <div className="product__card-detailAPhone">100+ bought this</div>
+              <div className="product__card-detailA">100+ bought this</div>
             </div>
-            <span onClick={() => addToBasket(item)} className="circle"></span>
-            <a href="/"> </a>
+           
+         
           </Link>
         );
       });
@@ -115,16 +115,10 @@ function ProductsPage(props) {
   return (
     <div>
       {loading === false ? (
-        <div>
-            {width <= 770 ? <div className="product__cardGridPhone">
-
-            {getCategoryProducts()}
-          
-          </div> :  <div className="product__cardGrid">
+       <div className="product__cardGrid">
           {getCategoryProducts()}
-          <div></div>
-        </div>}
-          
+         
+
         </div>
       
        

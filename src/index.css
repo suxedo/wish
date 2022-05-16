@@ -38,3 +38,21 @@ input {
   border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
   border-image: initial;
 }
+.mobile{
+  visibility: hidden;
+}
+.web{
+  visibility: visible;
+}
+
+@media only screen and (max-width: 600px) {
+  .web{
+    visibility: hidden;
+  }
+  .mobile{
+    visibility: visible;
+  }
+ 
+
+
+}

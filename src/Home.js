@@ -128,8 +128,8 @@ function Home(props) {
 
     
     return (
-        <div>
-         : 
+     
+         
           <div  className='homeroute'>
             <div className='home'>
             <div className='home__products'>
@@ -191,9 +191,9 @@ function Home(props) {
             
             
         </div>
+    
             
           </div>
-        </div>
       
     )
 }

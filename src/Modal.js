@@ -65,12 +65,12 @@ function Modal(props) {
 
   useEffect(() => {
     getComments();
-    if (props.iwish.indexOf(name) > -1) {
+    if (props.iwish.indexOf(name) >= 1) {
       setIwish(true);
     } else {
       setIwish(false);
     }
-  }, [name, users, refresh]);
+  }, []);
 
   useEffect(() => {
     getCurrentUserWishList();

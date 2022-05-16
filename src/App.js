@@ -28,6 +28,8 @@ import WishList from "./WishList";
 import HomePhone from "./Phone/HomePhone";
 import CartMobile from "./Phone/CartMobile";
 import HeaderProfilePhone from "./Phone/HeaderProfilePhone";
+import ProductDetailsMobile from "./Phone/ProductDetailsMobile";
+import HeaderDetails from "./Phone/HeaderDetails";
 
 const randomImages = [
   "https://hieumobile.com/wp-content/uploads/avatar-among-us-2.jpg",
@@ -125,7 +127,8 @@ function App(props) {
 
 
   return (
-    <div className="app">
+  
+       <div className="app">
       <Routes>
         {user ? (
           <>
@@ -135,23 +138,47 @@ function App(props) {
               element={
                 
                 <div>
-                   {width < 770 ? <div>
-                    <HeaderPhone/>
-                    <TabBar/>
-                    <HomePhone/>
-                
-                    
-                  </div> : <div>
-                  <Header />
-                  <SideBar />
-                  <Home/>
-                    
-                  </div>}
+                  <div>
+                    <div className="header__web">
+                    <Header/>
+                      
+                    </div>
+                    <div className="header__mobile">
+                      <HeaderPhone/>
+                    </div>
+
                  
-                  
                     
+                  </div>
+                  <div className="sidebar">
+                    <div className="sidebar__mobile">
+                      <TabBar/>
+                      
+                    </div>
+                    <div className="sidebar__web">
+                    <SideBar />
+                      
+                    </div>
+
                   
+
+                  </div>
+                  <div>
+                    <div className="home__web">
+                    <Home/>
+                      
+                    </div>
+                    <div className="home__mobile">
+                      <HomePhone/>
+                    </div>
+                 
+                    
+                  </div>
+                 
+              
                 
+                    
+              
                 </div>
               }
             />
@@ -159,20 +186,46 @@ function App(props) {
               path="/feed/:name"
               element={
                 <div>
-                   {width < 770 ? <div>
-                    <HeaderPhone/>
-                    <TabBar/>
-                    <HomePhone/>
-                
-                    
-                  </div> : <div>
-                  <Header />
-                  <SideBar />
-                  <Home/>
-                    
-                  </div>}
+           
+           <div>
+                    <div className="header__web">
+                    <Header/>
+                      
+                    </div>
+                    <div className="header__mobile">
+                      <HeaderPhone/>
+                    </div>
+
                  
+                    
+                  </div>
+                  <div className="sidebar">
+                    <div className="sidebar__mobile">
+                      <TabBar/>
+                      
+                    </div>
+                    <div className="sidebar__web">
+                    <SideBar />
+                      
+                    </div>
+
                   
+
+                  </div>
+                  <div>
+                    <div className="home__web">
+                    <Home/>
+                      
+                    </div>
+                    <div className="home__mobile">
+                      <HomePhone/>
+                    </div>
+                 
+                    
+                  </div>
+                        
+                 
+
                 </div>
               }
             />
@@ -180,10 +233,39 @@ function App(props) {
               path="/feed/product/:name"
               element={
                 <div>
-                  <Header />
-                  <SideBar />
-                  <Home />
+
+                  <div>
+                    <div className="header__web">
+                    <Header/>
+                      
+                    </div>
+                    <div className="header__mobile">
+                      <HeaderDetails/>
+                    </div>
+
+                 
+                    
+                  </div>
+                  <div>
+                    <div className="home__web">
+                    <Home/>
+                      
+                    </div>
+                    <div className="home__mobile">
+                      <ProductDetailsMobile/>
+                      
+                    </div>
+                    
+                  
+                  </div>
+
+                  <div  className="home__web">
                   <Modal setIsOpen={setIsOpen} />
+                    
+                  </div>
+                  
+              
+                  
                 </div>
               }
             />
@@ -192,20 +274,42 @@ function App(props) {
               path="/cart"
               element={
                 <div>
-                  {width < 770 ? <div>
-                    <HeaderCart/>
-                    <CartMobile/>
-                  
+                  <div>
+                    <div className="header__web">
+                    <Header />
+                      
+                      
+                    </div>
+                    <div className="header__mobile">
+                      <HeaderCart/>
+                      
+                    </div>
+
+
+                  </div>
+                  <div>
+                    <div className="header__web">
+                    <SideBar />
+                      
+                    </div>
+                  </div>
+
+                  <div>
+                    <div className="header__web">
+                    <Cart/>
+                      
+                      
+                    </div>
+                    <div className="header__mobile">
+                      <CartMobile/>
+                      
+                    </div>
+
+
+                  </div>
+             
+               
                  
-                 
-                    
-                  </div> : <div>
-                  <Header />
-                  <SideBar />
-                  <Cart />
-                    
-                  </div>}
-                  
                 </div>
               }
             />
@@ -215,19 +319,10 @@ function App(props) {
               element={
                 
                 <div>
-                       {width < 770 ? <div>
-                    <HeaderProfilePhone/>
-                    <CartMobile/>
                   
-                 
-                 
-                    
-                  </div> : <div>
                   <Header />
                   <SideBar />
                   <Profile areUsersLoaded={areUsersLoaded}/>
-                    
-                  </div>}
                   
                 </div>
               }
@@ -269,6 +364,8 @@ function App(props) {
         )}
       </Routes>
     </div>
+   
+   
   );
 }
 

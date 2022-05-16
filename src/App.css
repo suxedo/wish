@@ -5,3 +5,56 @@
   outline: none;
   flex: 1 1 auto;
 }
+.app-mobile{
+  visibility: hidden;
+  display: none;
+}
+.header__web{
+
+  visibility: visible;
+}
+.header__mobile{
+  visibility: hidden;
+}
+.sidebar__mobile{
+  visibility: hidden;
+}
+.sidebar__web{
+  visibility: visible;
+}
+.home__web{
+  visibility: visible;
+}
+.home__mobile{
+  visibility: hidden;
+}
+@media only screen and (max-width: 600px) {
+  .sidebar{
+    visibility: hidden;
+  }
+  .app{
+ visibility: hidden;
+  }
+  .header__web{
+    visibility: hidden;
+
+  }
+  .header__mobile{
+    visibility: visible;
+
+  }
+  .sidebar__mobile{
+    visibility: visible;
+  }
+  .sidebar__web{
+    visibility: hidden;
+  }
+  .home__web{
+    visibility: hidden;
+  }
+  .home__mobile{
+    visibility: visible;
+  }
+
+
+}
