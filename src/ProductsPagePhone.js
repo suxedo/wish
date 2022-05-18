@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import "./ProductPage.css";
+import "./ProductPagePhone.css";
 import { useParams, Link } from "react-router-dom";
 import Modal from "./Modal";
 import CurrencyFormat from "react-currency-format";
@@ -14,7 +14,7 @@ import useWindowSize from "./utils/useWindowSize";
 import Products from "./Products";
 import { Product } from "./models";
 
-function ProductsPage(props) {
+function ProductsPagePhone(props) {
   const { name } = useParams();
   const [isOpen, setIsOpen] = useState(false);
   const [products, setProducts] = useState([]);
@@ -67,7 +67,7 @@ function ProductsPage(props) {
               <div className="product__card-detailA">100+ bought this</div>
             </div>
             <span onClick={() => addToBasket(item)} className="circle"></span>
-            <a href="/"> </a>
+           
           </Link>
             
         
@@ -122,9 +122,9 @@ function ProductsPage(props) {
   }
 
   return (
-    <div className="dd">
+    <div className="test">
       {loading === false ? (
-       <div className="product__cardGrid">
+       <div className="productPhone__cardGrid">
           {getCategoryProducts()}
          
 
@@ -132,7 +132,7 @@ function ProductsPage(props) {
       
        
       ) : (
-        <div className="product__cardGrid">{getLoading()}</div>
+        <div className="productPhone__cardGrid">{getLoading()}</div>
       )}
 
       {isOpen && (
@@ -151,4 +151,4 @@ const mapStateToProps = (store) => ({
 const mapDispatchProps = (dispatch) =>
   bindActionCreators({ addToBasket }, dispatch);
 
-export default connect(mapStateToProps, mapDispatchProps)(ProductsPage);
+export default connect(mapStateToProps, mapDispatchProps)(ProductsPagePhone);

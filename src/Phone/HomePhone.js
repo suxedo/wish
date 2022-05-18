@@ -10,6 +10,7 @@ import { Auth, DataStore, Hub } from "aws-amplify";
 
 import ProductsPage from "../ProductsPage";
 import { User } from "../models";
+import ProductsPagePhone from "../ProductsPagePhone";
 
 function HomePhone(props) {
   const { name } = useParams();
@@ -109,17 +110,12 @@ function HomePhone(props) {
   }
 
   return (
-    <div className="homephone">
-      <div className="homephone__wrapper">
-        <div className="homephone__products">
-          {name && (
-            <div className="home__res">
-              Results for <h5>'{name}'</h5>
-            </div>
-          )}
-          <ProductsPage />
-        </div>
-      </div>
+    <div>
+  
+       
+        
+          <ProductsPagePhone />
+     
     </div>
   );
 }

@@ -39,15 +39,15 @@ function ProductDetailsMobile(props) {
     if (serviceDetails.length > 0) {
       return serviceDetails.map((item) => {
         return (
-          <div className="ProductContainer" >
-            <div style={{position:'relative'}}>
-              <div style={{position:'relative', overflow:'hidden'}}>
-              <img alt="dd" className=""  style={{width:'100%', height:'100vh'}} src={item.url} />
+          <div>
+            
+             
+              <img alt="dd" className=""  style={{width:'100%', height:'70vh'}} src={item.url} />
                 
-              </div>
+             
          
               
-            </div>
+         
 
              
                
@@ -260,11 +260,10 @@ function ProductDetailsMobile(props) {
     }
   }
   return (
-    <div style={{backgroundColor:'green'}}>
+    <div className='dff'>
 
      <div className="productDetails__TabHeader">
                 <div className="productDetails__TabHeaderWrapper">
-                  <div className="productDetails__TabHeaderContent">
                     <span className="productDetails__Tab1Wrapper">
                       <div
                         onClick={() => setActiveScreen("Overview")}
@@ -295,14 +294,18 @@ function ProductDetailsMobile(props) {
                     </span>
                   </div>
                 
-                </div>
+                
               </div>
+              <div className='ProductContainer' >
               {activeScreen === "Overview" && (
                 <div>
                   {getProductDetails()}
 
                 </div>
               )}
+                
+              </div>
+            
 
 
              

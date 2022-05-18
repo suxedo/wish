@@ -30,6 +30,8 @@ import CartMobile from "./Phone/CartMobile";
 import HeaderProfilePhone from "./Phone/HeaderProfilePhone";
 import ProductDetailsMobile from "./Phone/ProductDetailsMobile";
 import HeaderDetails from "./Phone/HeaderDetails";
+import HomeMain from "./HomeMain";
+import DetailsMain from "./DetailsMain";
 
 const randomImages = [
   "https://hieumobile.com/wp-content/uploads/avatar-among-us-2.jpg",
@@ -137,43 +139,20 @@ function App(props) {
               path="/"
               element={
                 
-                <div>
-                  <div>
-                    <div className="header__web">
-                    <Header/>
-                      
-                    </div>
-                    <div className="header__mobile">
-                      <HeaderPhone/>
-                    </div>
+                <div className="">
 
-                 
+              <div className="home__mobile">
+                  <HomeMain/>
                     
                   </div>
-                  <div className="sidebar">
-                    <div className="sidebar__mobile">
-                      <TabBar/>
-                      
-                    </div>
-                    <div className="sidebar__web">
-                    <SideBar />
-                      
-                    </div>
-
+               
+               
+                 
+                  <div className="home__mobile">
+                  <HomeMain/>
+                    
+                  </div>
                   
-
-                  </div>
-                  <div>
-                    <div className="home__web">
-                    <Home/>
-                      
-                    </div>
-                    <div className="home__mobile">
-                      <HomePhone/>
-                    </div>
-                 
-                    
-                  </div>
                  
               
                 
@@ -186,43 +165,14 @@ function App(props) {
               path="/feed/:name"
               element={
                 <div>
-           
-           <div>
-                    <div className="header__web">
-                    <Header/>
-                      
-                    </div>
-                    <div className="header__mobile">
-                      <HeaderPhone/>
-                    </div>
 
-                 
+                  <div className="home__mobile">
+                  <HomeMain/>
                     
                   </div>
-                  <div className="sidebar">
-                    <div className="sidebar__mobile">
-                      <TabBar/>
-                      
-                    </div>
-                    <div className="sidebar__web">
-                    <SideBar />
-                      
-                    </div>
-
                   
-
-                  </div>
-                  <div>
-                    <div className="home__web">
-                    <Home/>
-                      
-                    </div>
-                    <div className="home__mobile">
-                      <HomePhone/>
-                    </div>
-                 
-                    
-                  </div>
+           
+          
                         
                  
 
@@ -233,36 +183,19 @@ function App(props) {
               path="/feed/product/:name"
               element={
                 <div>
-
-                  <div>
-                    <div className="header__web">
-                    <Header/>
-                      
-                    </div>
-                    <div className="header__mobile">
-                      <HeaderDetails/>
-                    </div>
-
-                 
-                    
-                  </div>
-                  <div>
-                    <div className="home__web">
-                    <Home/>
-                      
-                    </div>
-                    <div className="home__mobile">
-                      <ProductDetailsMobile/>
-                      
-                    </div>
-                    
-                  
-                  </div>
-
-                  <div  className="home__web">
+                  <div className="home__web" >
+                  <Header/>
+                  <SideBar/>
+                  <Home/>
                   <Modal setIsOpen={setIsOpen} />
                     
                   </div>
+                  <div className="home__mobile">
+                    <DetailsMain/>
+                    
+                  </div>
+
+                  
                   
               
                   
@@ -273,7 +206,7 @@ function App(props) {
             <Route
               path="/cart"
               element={
-                <div>
+                <div  className='ho'>
                   <div>
                     <div className="header__web">
                     <Header />
@@ -318,7 +251,7 @@ function App(props) {
               path="/profile/:id"
               element={
                 
-                <div>
+                <div  className='ho'>
                   
                   <Header />
                   <SideBar />
@@ -330,7 +263,7 @@ function App(props) {
                  <Route
               path="/wishlist/:id"
               element={
-                <div>
+                <div  className='ho'>
                   <Header />
                   <SideBar />
                   <WishList/>

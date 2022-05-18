@@ -1,29 +1,26 @@
 .headersWrapper{
 
 }
-.header {
+.headerPhone {
+  height: 56px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
   display: flex;
-  flex-direction: row;
+  -webkit-box-align: center;
   align-items: center;
   position: fixed;
-  z-index: 5;
-  top: 0;
-  height: 52px;
-  background-color: white;
-  width: 100%;
-  
-  padding: 5px;
-  outline: none;
- 
-  transition: background-color 0.5s ease 0s;
-  box-sizing: border-box;
-  -webkit-box-pack: center;
-  justify-content: center;
+  top: 0px;
+  left: 0px;
+  z-index: 4;
+  transition: transform 0.25s ease 0s;
+  transform: translateY(0px);
+
+
 }
-.header__menuBtn{
+.headerPhone__menuBtn{
   display: none;
 }
-.header__logo {
+.headerPhone__logo {
   flex: 1;
   display: flex;
   height: 52px;
@@ -31,11 +28,17 @@
   -webkit-box-align: center;
   margin-left: 16px;
 }
-.header__logoLink {
+.headerPhone__logoLink {
+  flex: 1 0 auto;
+  outline: 0px;
+  border: none;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
   cursor: pointer;
   text-decoration: none;
 }
-.header__search {
+.headerPhone__search {
   display: flex;
   flex-direction: row;
   margin: 0px 32px;
@@ -44,17 +47,31 @@
   border-radius: 4px;
   box-sizing: border-box;
 }
-.header__input {
-  border-radius: 4px;
-  width: 270px;
-  background-color: rgb(255, 255, 255);
-  -webkit-box-align: center;
-  align-items: center;
-  transition: all 0.5s ease 0s;
-  position: relative;
+.headerPhone__SearchWrapper{
   height: 40px;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    padding-left: 8px;
+    max-width: 200px;
 }
-.header__inputWrapper {
+.headerPhone__Input{
+  border: 0px;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px 0px 0px 4px;
+  padding: 0px 0px 0px 8px;
+  color: rgb(72, 99, 111);
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  background-color: rgb(240, 245, 247);
+  max-width: 160px;
+}
+.headerPhone__inputWrapperPhone {
   -webkit-box-flex: 1;
   flex-grow: 1;
   background-color: rgb(255, 255, 255);
@@ -67,7 +84,6 @@
   -webkit-box-pack: center;
   justify-content: center;
 }
-
 .header__search__input {
   border: 0px;
   margin: 0px;
@@ -97,21 +113,23 @@ input[type="text"]:focus {
 .ico {
   font-size: small;
 }
-.header__searchIcon {
-  height: 30px;
+.headerPhone__SearchIcon {
+  width: 14px;
+  height: 14px;
+}
+.headerPhone__SearchIconWrapper {
+  height: 40px;
   width: 40px;
-  cursor: pointer;
+  background-color: rgb(240, 245, 247);
+  border-radius: 0px 4px 4px 0px;
   display: flex;
   -webkit-box-align: center;
   align-items: center;
   -webkit-box-pack: center;
   justify-content: center;
+
 }
-.header__searchIconWrapper {
-  width: 14px;
-  height: 14px;
-}
-.header__searchBtn {
+.headerPhone__searchBtn {
   outline: none;
   border-radius: 0px 4px 4px 0px;
   padding: 0px 16px;
@@ -131,7 +149,7 @@ input[type="text"]:focus {
   flex-shrink: 0;
   box-sizing: border-box;
 }
-.header__right {
+.headerPhone__right {
   height: 52px;
   display: flex;
   -webkit-box-pack: center;
@@ -140,14 +158,14 @@ input[type="text"]:focus {
   align-items: center;
   margin-right: 5vh;
 }
-.header__nav {
+.headerPhone__nav {
   width: 200px;
   display: flex;
 
   justify-content: space-evenly;
   align-items: center;
 }
-.header__baraccount {
+.headerPhone__baraccount {
   position: relative;
   display: flex;
   color: rgb(25, 42, 50);
@@ -192,14 +210,41 @@ input[type="text"]:focus {
   margin: 0px 14px 0px 0px;
 }
 .header__IconWrapper {
-  position: relative;
-  vertical-align: top;
-  height: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-right: 16px;
+}
+.headerPhone__Icon{
   display: flex;
   -webkit-box-align: center;
   align-items: center;
   -webkit-box-pack: center;
   justify-content: center;
+  position: relative;
+  flex: 0 0 auto;
+  height: 18px;
+  min-width: 18px;
+  padding: 10px;
+  cursor: pointer;
+}
+.headerPhone__IconDot{
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: normal;
+  position: absolute;
+  right: 5px;
+  top: -2px;
+  border-radius: 100px;
+  background-color: rgb(236, 47, 77);
+  color: rgb(255, 255, 255);
+  padding: 2px;
+  min-width: 14px;
+  height: 14px;
 }
 .header__IconLink {
   padding: 14px 10px;
@@ -254,6 +299,9 @@ a {
 .header__ProfileDontHover {
   
 }
+
+
+
 
 @media only screen and (max-width: 600px) {
 

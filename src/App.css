@@ -28,19 +28,21 @@
 .home__mobile{
   visibility: hidden;
 }
+.app{
+ 
+}
 @media only screen and (max-width: 600px) {
   .sidebar{
     visibility: hidden;
   }
-  .app{
- visibility: hidden;
-  }
+
   .header__web{
     visibility: hidden;
 
   }
   .header__mobile{
     visibility: visible;
+   
 
   }
   .sidebar__mobile{
@@ -54,7 +56,9 @@
   }
   .home__mobile{
     visibility: visible;
+  
   }
+ 
 
 
 }

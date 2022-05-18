@@ -1,0 +1,140 @@
+.productPhone__cardGrid{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 30px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+   
+    width: 100%;
+    height: 100%;
+   
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: rgb(255, 255, 255);
+    
+
+  
+    
+   
+}
+.test{
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+  
+    background-color: black;
+}
+.productPhone__card{
+
+    height: 280px;
+    background-color: white;
+    width: 180px;
+    box-shadow: rgb(0 0 0 / 5%) 0px 0px 0px 0px, rgb(0 0 0 / 5%) 0px 2px 20px 0px;
+    position: relative;
+   
+ 
+    overflow: hidden;
+    box-sizing: border-box;
+   
+    text-align: left;
+  
+    display: block;
+    transition: transform 0.3s ease 0s;
+    cursor: pointer;
+    line-height: 1;
+   
+    
+   
+}
+
+.product__card-image{
+    width: 100%;
+}
+.product__card-detail{
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    overflow: visible;
+    border-radius: 0px 0px 4px 4px;
+}
+.product__card-detailprice{
+    font-size: 16px;
+    font-weight: 400;
+    flex-shrink: 0;
+    color: rgb(25, 42, 50);
+    margin-right: 6px;
+}
+.product__card-detailA{
+    font-size: 12px;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(126, 154, 166);
+    margin-top: 10px;
+
+}
+
+
+
+
+.product__cardPhone{
+    height: 280px;
+    background-color: white;
+    width: 210px;
+    box-shadow: rgb(0 0 0 / 5%) 0px 0px 0px 0px, rgb(0 0 0 / 5%) 0px 2px 20px 0px;
+    position: relative;
+    margin: 10px;
+ 
+    overflow: hidden;
+    box-sizing: border-box;
+   
+    text-align: left;
+  
+    display: block;
+    transition: transform 0.3s ease 0s;
+    cursor: pointer;
+    line-height: 1;
+   
+    
+   
+}
+.product__card-imagePhone{
+    width: 100%;
+}
+.product__card-detail{
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    overflow: visible;
+    border-radius: 0px 0px 4px 4px;
+}
+.product__card-detailprice{
+    font-size: 16px;
+    font-weight: 400;
+    flex-shrink: 0;
+    color: rgb(25, 42, 50);
+    margin-right: 6px;
+}
+.product__card-detailA{
+    font-size: 12px;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(126, 154, 166);
+    margin-top: 10px;
+
+}
+.ddPhone{
+    -webkit-box-pack: center;
+    justify-content: center;
+    display: flex;
+    flex-shrink: 0;
+}
