@@ -7,7 +7,7 @@
     background-color: rgb(255, 255, 255);
     display: flex;
     flex: 0 0 auto;
-    overflow-x: auto;
+    overflow-x: scroll;
     z-index: 3;
     transition: transform 0.25s ease 0s;
     transform: translateY(0px);

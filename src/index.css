@@ -7,6 +7,8 @@ body {
   font-family: "proximanova", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-y: scroll; /* Hide vertical scrollbar */
+  overflow-x:hidden; 
 }
 
 code {

@@ -141,10 +141,17 @@ function App(props) {
                 
                 <div className="">
 
-              <div className="home__mobile">
-                  <HomeMain/>
+             
+              <div className="home__web" >
+                  <Header/>
+                  <SideBar/>
+                  <Home/>
+                
                     
                   </div>
+                 
+                    
+                  
                
                
                  
@@ -165,7 +172,13 @@ function App(props) {
               path="/feed/:name"
               element={
                 <div>
-
+                     <div className="home__web" >
+                  <Header/>
+                  <SideBar/>
+                  <Home/>
+                
+                    
+                  </div>
                   <div className="home__mobile">
                   <HomeMain/>
                     

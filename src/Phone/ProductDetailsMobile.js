@@ -39,7 +39,7 @@ function ProductDetailsMobile(props) {
     if (serviceDetails.length > 0) {
       return serviceDetails.map((item) => {
         return (
-          <div>
+          <div className='dff'>
             
              
               <img alt="dd" className=""  style={{width:'100%', height:'70vh'}} src={item.url} />
@@ -260,7 +260,7 @@ function ProductDetailsMobile(props) {
     }
   }
   return (
-    <div className='dff'>
+    <div>
 
      <div className="productDetails__TabHeader">
                 <div className="productDetails__TabHeaderWrapper">
@@ -296,7 +296,7 @@ function ProductDetailsMobile(props) {
                 
                 
               </div>
-              <div className='ProductContainer' >
+              <div className='ProductContainer'>
               {activeScreen === "Overview" && (
                 <div>
                   {getProductDetails()}

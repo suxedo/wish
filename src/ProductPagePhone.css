@@ -10,8 +10,11 @@
     height: 100%;
    
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: scroll;
     background: rgb(255, 255, 255);
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     
 
   
@@ -26,8 +29,18 @@
     display: flex;
     align-items: center;
   
-    background-color: black;
+ 
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
+.test::-webkit-scrollbar {
+    display: none;
+  }
+.productPhone__cardGrid::-webkit-scrollbar {
+    display: none;
+  }
+  
 .productPhone__card{
 
     height: 280px;
