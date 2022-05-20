@@ -10,14 +10,21 @@ import { addToBasket, fetchUser, fetchUsersData } from '../redux/actions';
 import ProductBtnSlide from '../components/ProductBtnSlide';
 import SelectSizeSlide from '../components/SelectSizeSlide';
 import OptionType from '../components/OptionType';
+import { set } from 'react-hook-form';
+import { useNavigate } from "react-router-dom";
 
 
 
 function ProductDetailsMobile(props) {
   const { name } = useParams();
+  const navigate = useNavigate();
+  const { baskets, addToBasket, quantity, users, fetchUsersData, rooms } =
+  props;
   const [activeScreen, setActiveScreen] = useState("Overview");
   const [sizeSlide, setSizeSlide] = useState(false);
+  const [colorSlide, setColorSlide] = useState(false);
   const [size, setSize] = useState([]);
+  const [color, setColor] = useState([]);
   const [sizeSelectSlide, setSizeSelectSlide] = useState(false);
   const [decriptionSlide, setDescriptionSlide] = useState("Description");
   const [products, setProducts] = useState([]);
@@ -32,8 +39,22 @@ function ProductDetailsMobile(props) {
     }
     fetchProduct();
     console.log(size);
+
+  
     
   }, []);
+  const  openDropdown = (item) => () => {
+    setSizeSelectSlide(true)
+ 
+  
+  };
+  const  addto = (item) => () => {
+    
+     
+  };
+  
+  
+
   function getProductDetails() {
     let serviceDetails = products.filter((a) => a.id === name);
     if (serviceDetails.length > 0) {
@@ -125,9 +146,9 @@ function ProductDetailsMobile(props) {
 
                     
                   </div>
-                  <div onClick={()=>{
+                  <div  onClick={()=>{
                     setSizeSelectSlide(true)
-                  }} className='productDetails__footerBtn'>
+                  }}className='productDetails__footerBtn'>
                   BUY
                 </div>
 
@@ -159,12 +180,78 @@ function ProductDetailsMobile(props) {
 
     
           <div className='SlidePanel__BackDropWrapperTitleColorDescriptipion'>
-            {item.color.map(item=>{
+            {item.size.map(item=>{
               return(
                 <OptionType
                 type={item}
                 isSelected={item === size}
-                onPress={() => setSize(item)}
+                onPress={() => {setSize(item) 
+                  setSizeSelectSlide(false)
+                  setColorSlide(true)
+                
+                }
+                
+                }
+               
+              />
+              
+                
+              )
+              
+            })}
+            
+          </div>
+         
+        </div>
+        
+      </div>
+    </div>
+    
+  
+
+    
+  </div>}
+  {colorSlide === true && <div className='BaseModal'>
+    <div>
+      <div className='SlidePanel__BackDropWrapper' >
+        <div className='SlidePanel__BackDropWrapperInner'>
+          <div className='SlidePanel__BackDropWrapperHeader' >
+          <div className='SlidePanel__BackDropWrapperHeaderTitle' >
+           Color
+            
+          </div>
+          <div onClick={()=>{
+           setSizeSelectSlide(false)
+          }}
+          
+          className="SlidePanel__BackDropWrapperHeaderTitleBtn"><svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" role="button" style={{width: "16px", height: "16px"}}><g stroke="#192a32" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l8 8M9 1L1 9"></path></g></svg></div>
+
+          <div>
+            
+          </div>
+            
+          </div>
+
+    
+          <div className='SlidePanel__BackDropWrapperTitleColorDescriptipion'>
+            {item.color.map(m=>{
+              return(
+                <OptionType
+                type={m}
+                isSelected={m === color}
+                onPress={(e) => {setColor(m)
+                  setColorSlide(false)
+                  addToBasket(
+                    item,
+                    color,
+                    size
+                  )
+                 navigate(-1);
+                 
+                 
+                 
+                
+                }}
                
               />
               

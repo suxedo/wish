@@ -21,7 +21,7 @@ export function reload() {
     })
 }
 
-export  function addToBasket(item, selectedOption, selectedOptionSize, empty) {
+export  function addToBasket(item, selectedOption, selectedOptionSize, empty, color, size) {
 
     return ((dispatch) => {
       
@@ -34,8 +34,8 @@ export  function addToBasket(item, selectedOption, selectedOptionSize, empty) {
                 price:item.price,
                 shipping:item.shipping,
                 quantity:item.quantity,
-                color:selectedOption || item.color[0] || null,
-                size:selectedOptionSize || item.size[0] ||  item.id,
+                color:selectedOption || item.color[0] || color,
+                size:selectedOptionSize || item.size[0] ||  size,
               
                
           }

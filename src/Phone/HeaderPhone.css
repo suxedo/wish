@@ -6,14 +6,18 @@
   width: 100%;
   background-color: rgb(255, 255, 255);
   display: flex;
+  overflow: hidden;
+ 
   -webkit-box-align: center;
   align-items: center;
+  justify-content: space-around;
   position: fixed;
   top: 0px;
   left: 0px;
   z-index: 4;
   transition: transform 0.25s ease 0s;
   transform: translateY(0px);
+  
 
 
 }

@@ -5,6 +5,7 @@
     flex-direction: column;
     box-sizing: border-box;
     background-color: rgb(240, 245, 247);
+    overflow: hidden;
 }
 .homephone__wrapper{
     width: 100%;

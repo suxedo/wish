@@ -140,6 +140,15 @@
   .home{
     visibility: visible;
   }
+  .main{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background: rgb(255, 255, 255);
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+  }
 
   @media only screen and (max-width: 600px) {
     .home__refreral{
@@ -171,6 +180,15 @@
     
       width: fit-content;
   
+    }
+    .main{
+      overflow-x: hidden;
+      overflow-y: scroll;
+      background: rgb(255, 255, 255);
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+
     }
     
    

@@ -49,7 +49,7 @@ function ProductsPagePhone(props) {
         return (
         
          
-            <Link to={`/feed/product/` + item.id} className="product__card">
+            <Link to={`/feed/product/` + item.id} className="productPhone__card">
             <img className="product__card-image" src={item.url} alt="wear" />
             <div className="product__card-detail">
               <CurrencyFormat
