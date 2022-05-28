@@ -33,6 +33,10 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;
     -ms-overflow-style: none;
+    overflow: hidden;
+   
+    overflow-x: hidden;
+    overflow-y: scroll;
    
 }
 .test::-webkit-scrollbar {

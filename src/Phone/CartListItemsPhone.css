@@ -1,36 +1,29 @@
-
-.cart__CartListHeading{
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    background-color: rgb(240, 245, 247);
-    color: rgb(25, 42, 50);
-    font-size: 18px;
-    font-weight: 700;
-    padding: 12px 24px;
-    border: 1px solid rgb(212, 227, 235);
-}
-.cart__CartItemCard{
-    display: flex;
-    flex-direction: column;
+.cartP__CartItemCardWrapper{
     position: relative;
-    display: flex;
+  
     min-width: 0px;
     background-color: rgb(248, 250, 251);
+    height: 190px;
+    width: 100%;
+   
+    -webkit-box-align: center;
+    align-items: center;
 }
-.cart__CartItemCardWrapper{
+.cartP__CartItemContainerWrapper{
     min-width: 0px;
     padding: 16px;
     background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(212, 227, 235);
+    margin-bottom: 5px;
+
 }
-.cart__CartItemCardContainer{
+.cartP__CartItemCardContainer{
     display: flex;
+  
     min-width: 0px;
+
 }
-
-
-
-.cart__CartItemCardImage{
+.cartP__CartItemCardImage{
     width: 60px;
     height: 60px;
     background-size: 60px;
@@ -38,57 +31,207 @@
     overflow: hidden;
     flex: 0 0 auto;
 }
+.cartP__ItemCartInfoandPrice{
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+ 
+    position: relative;
 
-.cart__ItemCartInfoandPriceWrapper{
-    display: flex;
-    flex-direction: column;
-    margin-left: 16px;
-    min-width: 0px;
+   
+   
 }
-.cart__ItemCartInfo{
-    display: flex;
-    flex-direction: column;
-    margin-left: 16px;
-    min-width: 0px;
-}
-.cart__ItemCartInfoName{
+.cartP__ItemCartInfoName{
     color: rgb(25, 42, 50);
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
     margin-bottom: 8px;
-    white-space: nowrap;
+    white-space: wrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    
+  
 }
-.cart_ItemCartVariation{
-    line-height: 20px;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-}
-.cart__ItemCartVariationText{
+.cartP__ItemCartVariationText{
     color: rgb(126, 154, 166);
+    font-size: 14px;
+    font-weight: 400; 
+}
+.cartP__PriceQuantityWrapper{
+    margin-left: 16px;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    flex: 0 0 auto;
+}
+.cartP__PriceWrapper{
+    display: flex;
+    flex-direction: column;
     font-size: 14px;
     font-weight: 400;
 }
-.cart__ItemCartShipping{
+.cartP__PriceInfo{
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+}
+.cartP__Price{
+    color: rgb(25, 42, 50);
+    text-align: end;
+    display: inline-block;
+}
+.cardP__oo{
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+}
+
+.cartP__quantityWrapper{
+    margin-top: 40px;
+}
+.cart__CartList{
+    display: flex;
+    flex-direction: column;
+}
+.cartP__InfoWrapper{
+    background-color: rgb(255, 255, 255);
+    border-top: 1px solid rgb(212, 227, 235);
+}
+.cartP__ShippingWrapperInfo{
+    display: flex;
+    position: relative;
+ 
+}
+.cartP__InfoWrapper2{
+    background-color: rgb(255, 255, 255);
+    padding: 8px 16px 16px;
+    width: 100%;
+   
+}
+.cartP__ShippingOption{
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+}
+.cartP__ShippingRadioWrapper{
+
+}
+.cartP__RadioOptions{
+    display: flex;
+    cursor: pointer;
+    flex-shrink: 0;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.cartP__btnRadio{
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgb(47, 183, 236);
+    border-radius: 50%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-shrink: 0;
+} 
+.cartP__ShippingOptionTitle{
+    color: rgb(25, 42, 50);
+    font-size: 14px;
+    margin: 6px 0px 6px 10px;
+    height: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-weight: normal;
+}
+.CartItem__ItemContainerWrapper{
+    min-width: 0px;
+    padding: 16px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(212, 227, 235);
+    margin-bottom: 5px;
+}
+.CartItem__ContainerWrapper{
+    display: flex;
+    min-width: 0px;
+   
+
+}
+.CartItem__ImageContainer{
+    display: flex;
+    flex-direction: column;
+}
+.CartItem__CartProductImageLink{
+    box-sizing: border-box;
+}
+.CartItem__CartProductImage{
+    width: 60px;
+    height: 60px;
+    background-size: 60px;
+    position: relative;
+    overflow: hidden;
+    flex: 0 0 auto;
+}
+.CartItem__CartProduct{
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    min-width: 0px;
+
+}
+.CartItem__CartProductName{
+    color: rgb(25, 42, 50);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: initial;
+    margin-bottom: 8px;
+    white-space: wrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.CartItem__CartProductDetail{
+    color: rgb(126, 154, 166);
+    font-size: 14px;
+    font-weight: 400;
     line-height: 20px;
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    color: rgb(72, 99, 111);
 }
-.cart__ItemCartQuantity{
+.CartItem__PriceQuantityWrapper{
+    margin-left: 16px;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    flex: 0 0 auto;
+}
+.CartItem__PriceInfo{
     display: flex;
-    flex-direction: row;
-    -webkit-box-align: center;
-    align-items: center;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 400;
 }
-.cart_ItemCartQuantitySelectBox{
-    margin: 0px 16px 0px 0px;
+.CartItem__PriceWrapper{
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+}
+.CartItem__ActualPrice{
+    color: rgb(25, 42, 50);
+    text-align: end;
+    display: inline-block;
+}
+.CartItem__PriceWrapper{
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+}
+.CartItem__QuantityWrapper{
+    margin-top: 40px;
+}
+.WishSelectInput__SelectBox{
+    margin: 0px 4px;
     box-sizing: border-box;
-    width: 64px;
     color: rgb(25, 42, 50);
     border-radius: 2px;
     border: 1px solid rgb(212, 227, 235);
@@ -101,13 +244,7 @@
     justify-content: center;
     cursor: pointer;
 }
-.cart__ItemCartQuantityText{
-    color: rgb(0, 152, 211);
-    font-size: 16px;
-    font-weight: 400;
-    cursor: pointer;
-}
-.cart_ItemCartQuantitySelectBoxText{
+.WishSelectInput__SelectBoxText{
     padding: 0px 0px 0px 16px;
     text-align: left;
     font-size: 16px;
@@ -118,77 +255,69 @@
     -webkit-box-align: center;
     align-items: center;
 }
-.cart_ItemCartQuantitySelectBoxIcon{
+.WishSelectInput__DropdownArrow{
     display: flex;
     margin: 0px 12px;
     width: 8px;
     transform: rotateZ(0deg);
     transition: all 0.3s ease 0s;
 }
-.cart_ItemCartQuantitySelectBoxIconOpen{
-    display: flex;
-    margin: 0px 12px;
-    width: 8px;
-    transform: rotateZ(-180deg);
-    transition: all 0.3s ease 0s;
+.CartItem__CartItemInfoWrapper{
+    background-color: rgb(255, 255, 255);
+    border-top: 1px solid rgb(212, 227, 235);
 }
+.CartItem__CartItemShippingWrapper{
+    display: flex;
+    position: relative;
 
-.cart__ItemCartPriceInfo{
+}
+.CartItem__ShippingOptions{
+    padding-top: 12px;
     display: flex;
-    font-size: 16px;
-    font-weight: 400;
-    margin-left: 48px;
-    -webkit-box-pack: end;
-    justify-content: flex-end;
-    -webkit-box-flex: 1;
-    flex-grow: 1;
+    flex-direction: column;
 }
-.cart__ItemCartPriceInfoText{
-    color: rgb(25, 42, 50);
-    margin-left: 4px;
-}
-.cart__ItemCartQuantityDropdown{
+.WishRadioGroup__RadioOptionWrapper{
     box-sizing: border-box;
-    position: absolute;
-    height: 0px;
-    overflow-y: scroll;
-    bottom: 42px;
-    left: 0px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 2px;
-    border-style: solid;
-    border-width: 0px;
-    border-color: rgb(212, 227, 235);
-    transition: height 0.3s ease 0s;
-    animation: 0.3s ease 0s 1 normal both running JZdqL;
-    z-index: 2;
-    width: 100%;
 }
-.cart__ItemCartQuantityDropdownOpen{
-    box-sizing: border-box;
-    position: absolute;
-    height: 252px;
-    overflow-y: scroll;
-    bottom: 42px;
-    left: 0px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 2px;
-    border-style: solid;
-    border-width: 0px;
-    border-color: rgb(212, 227, 235);
-    transition: height 0.3s ease 0s;
-    animation: 0.3s ease 0s 1 normal both running iNYMim;
-    z-index: 2;
-    width: 100%;
+.WishRadioGroup__RadioOption{
+    display: flex;
+    cursor: pointer;
+    flex-shrink: 0;
+    -webkit-box-align: center;
+    align-items: center;
 }
-.cart__ItemCartQuantityList{
-    font-size: 16px;
-    font-weight: 400;
-    min-height: 42px;
+.WishRadioGroup__Radio{
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgb(47, 183, 236);
+    border-radius: 50%;
     display: flex;
     -webkit-box-align: center;
     align-items: center;
     -webkit-box-pack: center;
     justify-content: center;
     flex-shrink: 0;
+}
+.WishRadioGroup__RadioDot{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgb(47, 183, 236);
+    transition: background-color 0.1s linear 0s;
+}
+.CartItem__ShippingOption{
+    color: rgb(25, 42, 50);
+    font-size: 14px;
+    margin: 6px 0px 6px 10px;
+    height: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-weight: normal;
+}
+.CartItem__CartItemWrapper{
+    position: relative;
+    display: flex;
+    min-width: 0px;
+    background-color: rgb(248, 250, 251);
 }

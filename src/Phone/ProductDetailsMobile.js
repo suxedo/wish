@@ -12,6 +12,7 @@ import SelectSizeSlide from '../components/SelectSizeSlide';
 import OptionType from '../components/OptionType';
 import { set } from 'react-hook-form';
 import { useNavigate } from "react-router-dom";
+import Loading from '../components/Loading';
 
 
 
@@ -28,6 +29,7 @@ function ProductDetailsMobile(props) {
   const [sizeSelectSlide, setSizeSelectSlide] = useState(false);
   const [decriptionSlide, setDescriptionSlide] = useState("Description");
   const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   React.useEffect(() => {
     async function fetchProduct() {
@@ -39,6 +41,10 @@ function ProductDetailsMobile(props) {
     }
     fetchProduct();
     console.log(size);
+    setTimeout(() => {
+      setLoading(false)
+      
+    }, 3000);
 
   
     
@@ -149,7 +155,7 @@ function ProductDetailsMobile(props) {
                   <div  onClick={()=>{
                     setSizeSelectSlide(true)
                   }}className='productDetails__footerBtn'>
-                  BUY
+                    {loading === false ? <div>BUY</div>:<Loading type="balls" color='white' />}
                 </div>
 
                   

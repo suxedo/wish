@@ -32,6 +32,7 @@ import ProductDetailsMobile from "./Phone/ProductDetailsMobile";
 import HeaderDetails from "./Phone/HeaderDetails";
 import HomeMain from "./HomeMain";
 import DetailsMain from "./DetailsMain";
+import HomeCart from "./HomeCart";
 
 const randomImages = [
   "https://hieumobile.com/wp-content/uploads/avatar-among-us-2.jpg",
@@ -219,44 +220,23 @@ function App(props) {
             <Route
               path="/cart"
               element={
-                <div  className='ho'>
-                  <div>
-                    <div className="header__web">
-                    <Header />
-                      
-                      
-                    </div>
-                    <div className="header__mobile">
-                      <HeaderCart/>
-                      
-                    </div>
-
-
-                  </div>
-                  <div>
-                    <div className="header__web">
-                    <SideBar />
-                      
-                    </div>
-                  </div>
-
-                  <div>
-                    <div className="header__web">
-                    <Cart/>
-                      
-                      
-                    </div>
-                    <div className="header__mobile">
-                      <CartMobile/>
-                      
-                    </div>
-
-
-                  </div>
-             
-               
-                 
+                <div>
+                <div className="home__web" >
+                <Header/>
+                <SideBar/>
+                <Cart/>
+                  
                 </div>
+                <div className="home__mobile">
+                  <HomeCart/>                
+                  
+                </div>
+
+                
+                
+            
+                
+              </div>
               }
             />
 

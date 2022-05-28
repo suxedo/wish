@@ -4,7 +4,7 @@ import TabBar from "./Phone/TabBar";
 import HomePhone from "./Phone/HomePhone";
 function HomeMain() {
   return (
-    <div style={{overflow:'hidden', display:'flex', alignItems:'center', flexDirection:'column', width:'100%'}}  >
+    <div>
        <HeaderPhone/>
        <TabBar/>
        <HomePhone/>

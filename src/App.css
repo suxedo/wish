@@ -23,10 +23,11 @@
   visibility: visible;
 }
 .home__web{
-  visibility: visible;
+  
 }
 .home__mobile{
-  visibility: hidden;
+ 
+  display: none;
 }
 .app{
  
@@ -49,13 +50,16 @@
     visibility: visible;
   }
   .sidebar__web{
-    visibility: hidden;
+    display: none;
   }
   .home__web{
-    visibility: hidden;
+   
+    display: none;
   }
   .home__mobile{
     visibility: visible;
+    display: grid;
+  
   
   }
  
