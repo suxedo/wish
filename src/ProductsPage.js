@@ -13,6 +13,7 @@ import useWindowSize from "./utils/useWindowSize";
 
 import Products from "./Products";
 import { Product } from "./models";
+import Slider from "./components/Slider";
 
 function ProductsPage(props) {
   const { name } = useParams();
@@ -123,8 +124,12 @@ function ProductsPage(props) {
 
   return (
     <div className="dd">
+   
+
       {loading === false ? (
        <div className="product__cardGrid">
+   
+
           {getCategoryProducts()}
          
 

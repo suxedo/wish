@@ -9,6 +9,8 @@ import { Auth, DataStore } from "aws-amplify";
 import useWindowSize from "./utils/useWindowSize";
 import { User } from "./models";
 import HeaderPhone from "./Phone/HeaderPhone";
+import { Dropdown, Menu, Space, Divider  } from 'antd';
+import { GiftOutlined, MailOutlined, SettingOutlined , CaretRightOutlined,HeartFilled, ShoppingCartOutlined, HistoryOutlined, CalendarOutlined, WalletFilled, TrophyFilled, UsergroupAddOutlined  } from '@ant-design/icons';
 function Header(props) {
   const { baskets, addToBasket, removeFromBasket } = props;
   const {height, width }  = useWindowSize()
@@ -33,12 +35,76 @@ function Header(props) {
       await DataStore.query(User, u => u.userSub('eq', user.attributes.sub)).then((data) => {
         if (data) {
           setUser({ uid: user.attributes.sub, ...data });
+          
            
         }
 
     })
      
   };
+
+  const menu = (
+    <Menu mode="horizontal" defaultSelectedKeys={['mail']}>
+       <Menu.Item key="profile">
+       <div style={{display:'flex', flexDirection:'row', justifyContent:'space-between', width:'290px',  alignItems:'center', padding:'5px'}}>
+      <div className="profile__pictur">
+         G
+        </div>
+        <div >
+        <h3>Nipwa Tyudano</h3>
+        <p>View Profile</p>
+          
+        </div>
+        <div>
+        <CaretRightOutlined />
+          
+        </div>
+     
+        
+      </div>
+    </Menu.Item>
+     
+      <Menu.Item key="gift" icon={<GiftOutlined />}>
+      Earn $100
+    </Menu.Item>
+    <Menu.Item key="wishlist" icon={<HeartFilled />}>
+    <Link  to={`/profile/` + user?.uid} >
+    Wishlist
+    </Link>
+    
+    </Menu.Item>
+    <Menu.Item key="cart" icon={<ShoppingCartOutlined />}>
+     
+     <Link to="/cart">
+     Shopping Cart
+    </Link>
+    </Menu.Item>
+    
+    
+    <Divider/>
+    <Menu.Item key="history" icon={<HistoryOutlined />}>
+    Order History
+    </Menu.Item>
+    <Menu.Item key="bonus" icon={<CalendarOutlined />}>
+     Daily Login Bonus
+    </Menu.Item>
+    <Menu.Item key="wallet" icon={<WalletFilled />}>
+  Wish Cash: 0.00
+    </Menu.Item>
+    <Menu.Item key="rewards" icon={<TrophyFilled />}>
+  Rewards
+    </Menu.Item>
+    <Menu.Item key="help" icon={<UsergroupAddOutlined />}>
+Help
+    </Menu.Item>
+   
+
+     
+     
+    
+  
+  </Menu>
+  );
 
   
 
@@ -99,9 +165,9 @@ function Header(props) {
         <p>Search</p>
       </div>
     </div>
+    <Dropdown overlay={menu} placement='bottomRight'>
     <Link  to={`/profile/` + user?.uid}  className="header__baraccount">
       <div
-      
         className="header__profile"
       >
         <img
@@ -109,12 +175,12 @@ function Header(props) {
           alt="name"
           src="https://canary.contestimg.wish.com/api/image/fetch?profile_image_name=NTYwNWMxYmEyMWE4NjMxNzk0ZTk1NDUy_1398450030237.jpg&w=50&h=50"
         />
+
       </div>
-      <div
-        className="header__ProfileHover">
-        jjjj
-      </div>
+      
     </Link>
+  </Dropdown>
+  
     <div className="header__IconWrapper">
       <a href="/" className="header__IconLink">
         <svg

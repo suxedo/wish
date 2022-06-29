@@ -14,6 +14,7 @@ import { useForm } from "react-hook-form";
 import CustomButton from "./components/CustomButton";
 import FollowerUsers from "./components/FollowerUsers";
 import FollowingUsers from "./components/FollowingUsers";
+import WishListItemImageWeb from "./components/WishListItemImageWeb";
 
 function Profile(props) {
   const [user, setUser] = useState([]);
@@ -380,15 +381,7 @@ function Profile(props) {
                     to={`/wishlist/` + item?.id}
                     className="profile__wishPanelCollection"
                   >
-                    <div className="profile__wishPanelPreview">
-                      <div className="profile__wishPanelImage">
-                        <div className="profile__wishPanelImagePreview"></div>
-                      </div>
-
-                      <div className="profile__wishPanelImage">
-                        <div className="profile__wishPanelImagePreview"></div>
-                      </div>
-                    </div>
+                   <WishListItemImageWeb ids={item.id}/>
                     <div className="profile__wishPanelCollectionDescription">
                       <div className="profile__wishPanelCollectionDescriptionName">
                         {item.name}

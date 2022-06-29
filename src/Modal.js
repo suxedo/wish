@@ -12,6 +12,7 @@ import DropdownOptions from "./DropdownOptions";
 import ReviewsData from "./ReviewsData";
 import { Auth, DataStore, SortDirection } from "aws-amplify";
 import { useForm } from "react-hook-form";
+import { Button, notification } from 'antd';
 
 import {
   CartProduct,
@@ -65,16 +66,45 @@ function Modal(props) {
 
   useEffect(() => {
     getComments();
-    if (props.iwish.indexOf(name) >= 1) {
+    if (props.iwish.indexOf(name) > 1) {
       setIwish(true);
     } else {
       setIwish(false);
     }
-  }, []);
+  }, [props.iwish]);
 
   useEffect(() => {
     getCurrentUserWishList();
   }, [props.currentUser, props.following]);
+  
+const openNotification  = async (item) => {
+  notification.open({
+    message: <div style={{margin:'10px'}}>
+      <p>Item Added to Cart</p>
+      
+    </div>,
+    description:<div style={{marginLeft:'40px', textAlign:'center'}}>
+      <h4 style={{marginLeft:'40px', textAlign:'left',fontWeight:'700'}}>{item.name}</h4>,
+      <h3>{selectedOption}</h3>
+      <h3>{selectedOptionSize}</h3>
+      
+    </div>,
+    
+    icon: <img src={item.url} alt="avatar" style={{width: '100px', height:'100px', margin:'20px'}}/>,
+ 
+    onClick: () => {
+      console.log('Notification Clicked!');
+    },
+    style: {
+      width: 700,
+      height:200,
+    },
+    
+
+   
+   
+  });
+};
 
   const getCurrentUserWishList = async () => {
     const user = await Auth.currentAuthenticatedUser();
@@ -483,8 +513,13 @@ function Modal(props) {
                         selectedOptionSize,
                         item.size[0]
                       );
+                      openNotification(item)
+                      
                       e.preventDefault(navigate(-1));
-                    }}
+                      
+                    }
+                    
+                  }
                     className="modal__PoductBuyBtn"
                   >
                     Buy

@@ -1,0 +1,179 @@
+.ProfilePage__Wrapper{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    flex: 1 1 auto;
+    background-color: rgb(240, 245, 247);
+    overflow-y: scroll;
+    height: 100%;
+   
+}
+.ProfileInfo__Wrapper{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    padding: 24px;
+    border-bottom: 1px solid rgb(212, 227, 235);
+
+}
+.ProfileInfo__ProfileInfoContainer{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.ProfilePicture__ProfileWrapper{
+    background-position: center center;
+    width: 88px;
+    height: 88px;
+    background-size: 88px;
+    border-radius: 100%;
+    background-color: rgba(47, 183, 236, 0.3);
+    text-align: center;
+    line-height: 88px;
+    font-size: 44px;
+    font-weight: bold;
+    color: rgb(47, 183, 236);
+    opacity: 1;
+    flex-shrink: 0;
+    border: 0px solid rgb(255, 255, 255);
+}
+.ProfileInfo__Name{
+    margin-top: 16px;
+    color: rgb(25, 42, 50);
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+}
+.ProfileInfo__Country{
+    margin-top: 4px;
+    color: rgb(72, 99, 111);
+    font-weight: 400;
+    font-size: 14px;
+}
+.ProfileInfo__ProfileStatWrapper{
+    display: flex;
+    margin-top: 25px;
+}
+.ProfileInfo__StatWrapper{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 115px;
+    border-right: 1px solid rgb(240, 245, 247);
+
+}
+.ProfileInfo__StatNumber{
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(25, 42, 50);
+}
+.ProfileInfo__StatText{
+    font-weight: 400;
+    font-size: 12px;
+    color: rgb(126, 154, 166);
+}
+.WishButtons__WishButton{
+    outline: none;
+    border-radius: 4px;
+    padding: 0px 16px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 14px;
+    height: 32px;
+    min-width: 60px;
+    color: rgb(47, 183, 236);
+    background-color: rgba(47, 183, 236, 0.05);
+    transition: background-color 0.2s ease 0s;
+    width: 100%;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.ProfilePage__CreateWishlistText{
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 6px;
+}
+.WishlistCollection__Wrapper{
+    padding-top: 24px;
+}
+.WishlistCollection__Header{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+.WishlistCollection__HeaderMainRow{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+.WishlistCollection__Name{
+    font-weight: 400;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    color: rgb(25, 42, 50);
+}
+.WishlistCollection__IconSection{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+
+}
+.WishlistCollection__KebabMenuImg{
+    height: 14px;
+    width: 18px;
+    margin: 2px 0px;
+}
+.WishlistCollection__Size{
+    font-weight: 400;
+    font-size: 12px;
+    color: rgb(126, 154, 166);
+
+}
+.WishlistCollection__PreviewLink{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 228px;
+    overflow: hidden;
+}
+.ik{
+    width: 110px;
+    height: 110px;
+  
+    background-color: rgb(240, 245, 247);
+    background-size: cover;
+    background-position: center center;
+    margin: 2px;
+}
+.WishlistCollection__PreviewImage{
+    width: 110px;
+    height: 110px;
+
+    background-color: rgb(240, 245, 247);
+    background-size: cover;
+    background-position: center center;
+    margin: 2px;
+}
+.ProfilePage__WishlistsContainerWrapper{
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    padding: 16px;
+    background-color: rgb(248, 250, 251);
+}

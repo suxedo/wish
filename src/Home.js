@@ -10,6 +10,7 @@ import { Auth, DataStore, Hub } from 'aws-amplify';
 import { User } from './models';
 import HomePhone from './Phone/HomePhone';
 import useWindowSize from "./utils/useWindowSize";
+import Slider from './components/Slider';
 function Home(props) {
     const { name } = useParams();
     const [all, setAll] = useState([])
@@ -136,6 +137,7 @@ function Home(props) {
                 {name && <div className='home__res'>
                 Results for  <h5>'{name}'</h5>
                 </div> }
+               <Slider/>
                 <ProductsPage/>
             </div>
             {baskets.length === 0 ? 

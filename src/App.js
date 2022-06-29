@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Home";
 import Header from "./Header";
 import SideBar from "./SideBar";
-
+import 'antd/dist/antd.css';
 import useWindowSize from "./utils/useWindowSize";
 
 import Modal from "./Modal";
@@ -33,6 +33,7 @@ import HeaderDetails from "./Phone/HeaderDetails";
 import HomeMain from "./HomeMain";
 import DetailsMain from "./DetailsMain";
 import HomeCart from "./HomeCart";
+import ProfilePhone from "./Phone/ProfilePhone";
 
 const randomImages = [
   "https://hieumobile.com/wp-content/uploads/avatar-among-us-2.jpg",
@@ -243,14 +244,24 @@ function App(props) {
             <Route
               path="/profile/:id"
               element={
-                
-                <div  className='ho'>
-                  
-                  <Header />
+                <div>
+                <div className="home__web" >
+                <Header />
                   <SideBar />
                   <Profile areUsersLoaded={areUsersLoaded}/>
+                </div>
+                <div className="home__mobile">
+                  <ProfilePhone/>                
                   
                 </div>
+
+                
+                
+            
+                
+              </div>
+                
+  
               }
             />
                  <Route

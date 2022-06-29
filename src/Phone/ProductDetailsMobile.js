@@ -1,6 +1,6 @@
-import React,{useState} from 'react'
+import React,{useState, useEffect} from 'react'
 import './ProductDetailsMobile.css'
-import { Auth, DataStore, SortDirection } from "aws-amplify";
+import { Auth, DataStore, SortDirection, Hub } from "aws-amplify";
 import { useParams } from "react-router-dom";
 import { Product } from '../models';
 import CurrencyFormat from 'react-currency-format';
@@ -30,6 +30,7 @@ function ProductDetailsMobile(props) {
   const [decriptionSlide, setDescriptionSlide] = useState("Description");
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [user, setUser] = useState(undefined);
 
   React.useEffect(() => {
     async function fetchProduct() {
@@ -58,7 +59,39 @@ function ProductDetailsMobile(props) {
     
      
   };
-  
+  const checkUser = async () => {
+    try {
+      const authUser = await Auth.currentAuthenticatedUser({
+        bypassCache: true,
+      });
+      setUser(authUser);
+    } catch (e) {
+      setUser(null);
+    }
+  };
+  useEffect(() => {
+    checkUser();
+  }, []);
+
+  useEffect(() => {
+    const listener = (data) => {
+      if (data.payload.event === "signIn" || data.payload.event === "signOut") {
+        checkUser();
+      }
+    };
+
+    Hub.listen("auth", listener);
+    return () => Hub.remove("auth", listener);
+  }, []);
+
+
+  if (user === undefined) {
+    return (
+      <div style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+        <p>loading.....</p>
+      </div>
+    );
+  }
   
 
   function getProductDetails() {

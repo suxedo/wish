@@ -1,6 +1,22 @@
 .headersWrapper{
 
 }
+.profile__pictur{
+  background-position: center center;
+  width: 60px;
+  height: 60px;
+  background-size: 60px;
+  border-radius: 100%;
+  background-color: rgba(47, 183, 236, 0.3);
+  text-align: center;
+  line-height: 60px;
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(47, 183, 236);
+  opacity: 1;
+  flex-shrink: 0;
+  border: 0px solid rgb(255, 255, 255);
+}
 .header {
   display: flex;
   flex-direction: row;
