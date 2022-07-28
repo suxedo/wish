@@ -9,6 +9,7 @@ import { addToBasket } from "../redux/actions";
 import RoomTypeRow from "./RoomTypeRow";
 import { Product, WishProducts, WishRooms } from "../models";
 import CustomButton from "./CustomButton";
+import OptionType from "./OptionType";
 
 function SelectSizeSlide(props) {
 
@@ -49,64 +50,26 @@ function SelectSizeSlide(props) {
           <div className='SlidePanel__BackDropWrapperTitleColorDescriptipion'>
             {item.color.map(item=>{
               return(
-                <div className="SelectionList__Wrapper">
-                  <div className="SelectionList__OptionContent">
-                    <div className="SelectionList__OptionContentWrapper">
-                      <div className="SelectionList__OptionContentBadge"> 
-                        
-                      </div>
-                      <div className="SelectionList__OptionContentSizeText">
-                        {item}
-                      </div>
-                      <div className="SelectionList__OptionContentPriceContainer" >
-                        <div className="SelectionList__OptionContentPriceWrapper">
-                          <div  className="SelectionList__OptionContentPriceNo">
-                            {item.price}
-                          </div>
-                          
-                        </div>
-                        
-                      </div>
-                    </div>
-                  </div>
-                  
-                </div>
+                <OptionType
+                type={item}
+                isSelected={item === selectedType}
+                onPress={() => setSelectedType(item)}
+               
+              />
+              
                 
               )
               
             })}
             
           </div>
-          <div className='SlidePanel__BackDropWrapperTitleColor'>
-            Sizes
-          </div>
-          <div className='SlidePanel__BackDropWrapperTitleColorDescriptipion'>
-          {item.size.map(item=>{
-              return(
-                <div>
-                  {item}
-                  
-                </div>
-                
-              )
-              
-            })}
-            
-          </div>
-          
+         
         </div>
         
       </div>
     </div>
     
-        <RoomTypeRow
-          type={item}
-          isSelected={item.id === selectedType}
-          onPress={() => setSelectedType(item.id)}
-          iwish={iwish}
-          productId={productId}
-        />
-
+  
 
     
   </div>

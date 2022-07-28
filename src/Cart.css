@@ -298,6 +298,7 @@
 @media only screen and (max-width: 600px) {
     .cart{
       visibility: hidden;
+      display: none;
     }
 }
 

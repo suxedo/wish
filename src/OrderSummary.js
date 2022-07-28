@@ -91,6 +91,7 @@ function OrderSummary({getBasketTotal, baskets, getShippingTotal}) {
 
                 
             </div>
+            <div size="2" color="17" role="button" rel="noopener noreferrer" class="Button" tabindex="0">Checkout</div>
             
         </div>
     </div>
